@@ -1,4 +1,6 @@
-void toni() {
+void toni((float posx, float posy)) {
+  push();
+  translate(posx, posy);
   line(m*2, m, m*5, m);
   line(m*2, m, m, m*2);
   line(m*5, m, m*6, m*2);
@@ -18,4 +20,5 @@ void toni() {
   line(m*2, m*4, m*4, m*4);
   quad(m*2, m*4, m*3, m*4, m*3, m*5, m*2, m*5);
   quad(m*4, m*4, m*5, m*4, m*5, m*5, m*4, m*5);
+  pop();
 }
